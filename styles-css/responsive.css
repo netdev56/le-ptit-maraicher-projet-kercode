@@ -1,0 +1,488 @@
+/* 768px */
+@media screen and (max-width:768px){
+
+/* ---Bandeau vert---*/
+
+#greenbanner{
+    display: none;
+}
+
+
+
+/* -------Bannières--------*/
+
+/* ---Bannière accueil---*/
+
+.fdrelative{
+    display: none;
+}
+
+.fdrelativepanier{
+    display: none;
+}
+
+.fdrelativeactus{
+    display: none;
+}
+
+.fdrelativecontact{
+    display: none;
+}
+
+
+
+/* ---Menu haut---*/
+
+#fdmenuheader{
+    display: none;
+}
+
+
+
+/* -------Page d'accueil--------*/
+
+/* ---Contenu 1 - Texte d'accueil---*/
+
+.designcontenu1accueil img{
+    display: none;
+}
+.designcontenu1accueil{
+    margin: 0 15px 0;
+    text-align: center;
+}
+
+#contenu1accueil .pagewidth .designcontenu1accueil h1{
+    font-size: 1.7rem;
+}
+
+
+
+/* ---Contenu 2 - Les paniers---*/
+
+#contenu2paniers .pagewidth .pagewidthboard1{
+    justify-content: center;
+}
+.titrecontenu2paniers{
+    width: 100%;
+}
+
+.pagewidthboard1 .board1{
+    width: 80%;
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+.pagewidthboard1 .board1 ul li{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.pagewidthboard1 .board1 img{
+    width: 100%;
+}
+
+
+
+/* ---Contenu 3 - Coordonnées---*/
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees{
+    margin: 0 5px;
+    justify-content: center;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees .textecontenu3coordonnees h1{
+    font-size: 2rem;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees .textecontenu3coordonnees{
+    font-size: 1.5rem;
+    padding: 0 1px 0 1px;
+}
+
+.slidegen{
+    display: none;
+}
+
+
+
+/* ---Contenu 4 - Newsletter---*/
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter {
+    text-align: center;
+}
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter form input[type=email]{
+    padding: 15px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter form input[type=submit]{
+    padding: 15px;
+}
+
+
+
+/* ---Contenu 5 - Team---*/
+
+#contenu5team{
+    display: none;
+}
+
+
+
+/*  ---Retour haut de page---  */
+.retourhautdepage{
+    text-align: center !important; 
+}
+
+
+
+/* -------Page Paniers--------*/
+
+.designformulaire .designpaniersform {
+    margin: 0;
+}
+
+.designpaniersform fieldset{
+    flex-wrap: wrap;
+}
+
+.designpaniersform fieldset .formreservation input[type=text],
+.designpaniersform fieldset .formreservation input[type=tel],
+.designpaniersform fieldset .formreservation input[type=email],
+.designpaniersform fieldset .formreservation input[type=date]{
+    margin-bottom: 15px;
+}
+
+
+
+/* -------Page Actus--------*/
+
+.cardgen1{
+    flex-wrap: wrap;
+}
+
+.cardgen2{
+    flex-wrap: wrap;
+}
+
+
+
+/* -------Page Actus Full--------*/
+
+.articlesactusfull{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articlesactusfull .reseauxactusgauche{
+    margin: 0 0 15px 0;
+}
+
+.articlesactusfull .reseauxactusgauche a{
+    margin: 0 10px 0;
+    font-size: 15px;
+}
+
+.reseauxactuscentre{
+    margin: 0 15px 0;
+}
+
+.reseauxactuscentre img{
+    width: 100%;
+}
+
+.reseauxactusdroit h6{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.responsiveactus{
+    display: none;
+}
+
+
+
+/*  ----------main-page actualités Recette velouté de courgettes----------  */
+
+.ingredientscourgettesgen{
+    flex-direction: column;
+}
+
+
+
+/* -------Page Contact--------*/
+
+#contenuadresse .pagewidth{
+    flex-wrap: wrap;
+}
+
+#contenuadresse .pagewidth .designcontenuadresse .textecontenuadresse h1{
+    font-size: 2rem;
+}
+
+#contenuadresse .pagewidth .designcontenuadresse .textecontenuadresse{
+    font-size: 1.5rem;
+}
+
+.designformcontact{
+    width: 100%;
+    margin-right: 30px;
+}
+
+.designformcontact .formcontact{
+    margin: 0;
+}
+
+.designformcontact .boutonformcontact{
+    margin-left: 35px;
+}
+
+.designcontactform fieldset .formcontact input[type=text],
+.designcontactform fieldset .formcontact input[type=tel],
+.designcontactform fieldset .formcontact input[type=email]{
+    margin-bottom: 15px;
+}
+
+.designcontactform .boutonformcontact input[type=submit]{
+    padding: 15px;
+    margin: 0px 0 20px 22px;
+}
+
+
+
+/* -------Page Désinscription newsletter--------*/
+#contenunewsletter .pagewidth {
+    flex-wrap: wrap;
+}
+
+.formdesinscrip {
+    margin: 0;
+}
+
+
+
+
+
+/* -------Page SiteMap--------*/
+
+#contenusitemap .pagewidth .contenusitemapmargeresponsive{
+    padding: 0 5px 0 5px ;
+}
+
+
+
+/* -------Page Mentions Légales--------*/
+#mentionslegales .pagewidth .mentionslegalesmargeresponsive{
+    padding: 0 5px 0 5px ;
+}
+
+
+
+/* -------Footer--------*/
+
+.designfooter .designcolonnefooter{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.designfooter .designcolonnefooter .colonnefooter{
+    text-align: center;
+}
+
+.designcolonnefooter .colonnefooter .navcolonnefooter{
+    flex-direction: column;
+}
+
+.designcolonnefooter .colonnefooter .navcolonnefooter ul li{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.designcolonnefooter .colonnefooter .navcolonnefooter:last-child { 
+    justify-content: center;
+}
+
+.colonnefooter ul{
+    flex-wrap: wrap;
+    padding-right: 0%;
+}
+
+.designcolonnefooter .colonnefooter input[type=email]{
+    width: 30%;
+}
+
+.designcolonnefooter .colonnefooter input[type=submit]{
+    margin: 10px;
+}
+
+
+
+/* -------Copyright--------*/
+.designfooter .copyfooter{
+    text-align: center;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:992px){
+
+
+
+
+
+/* -------Page d'accueil--------*/
+
+/* ---Contenu 1 - Texte d'accueil---*/
+#contenu1accueil .pagewidth .designcontenu1accueil img{
+    width: 80%;
+    height: 100%;
+}
+
+#contenu1accueil .pagewidth .designcontenu1accueil{
+    margin: 0 15px 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/* ---Contenu 2 - Les paniers---*/
+#contenu2paniers .pagewidth .pagewidthboard1{
+    justify-content: center;
+}
+
+#contenu2paniers .pagewidth .board1{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.pagewidthboard1 .board1 ul li{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+
+
+/* ---Contenu 3 - Coordonnées---*/
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees{
+    justify-content: center;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees .textecontenu3coordonnees h1{
+    font-size: 2rem;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees .textecontenu3coordonnees{
+    font-size: 1.5rem;
+    padding: 0 1px 0 1px;
+}
+
+.slidegen{
+    display: none;
+}
+
+
+
+/* ---Contenu 5 - Team---*/
+
+#contenu5team .pagewidth .designcontenu5team .membresteam img {
+    width: 60%;
+}
+
+
+
+
+/* -------Page Paniers--------*/
+
+#contenupaniers .pagewidth .pagewidthboard1{
+    justify-content: center;
+}
+
+#contenupaniers .pagewidth .board1{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.contenupaniers .board1 ul li{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 img {
+    width: 100%;
+}
+
+
+
+/* -------Page Actus Full--------*/
+
+.articlesactusfull{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articlesactusfull .reseauxactusgauche{
+    margin: 0 0 15px 0;
+}
+
+.articlesactusfull .reseauxactusgauche a{
+    margin: 0 10px 0;
+    font-size: 20px;
+}
+
+.reseauxactuscentre{
+    margin: 0 15px 0;
+}
+
+.reseauxactuscentre img{
+    width: 100%;
+}
+
+.articlesactusfull .reseauxactusdroit{
+    margin-top: 40px;
+}
+
+.responsiveactus{
+    display: none;
+}
+
+
+
+/* -------Page Contact--------*/
+
+.designcontactform fieldset .formcontact input[type=text],
+.designcontactform fieldset .formcontact input[type=tel],
+.designcontactform fieldset .formcontact input[type=email]{
+    width: 90%;
+}
+
+.designcontactform fieldset .formcontact textarea{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+}

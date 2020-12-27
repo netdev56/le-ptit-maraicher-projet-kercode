@@ -1,0 +1,1592 @@
+/*  ----------reset html----------  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/*  ----------header----------  */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3b3228;
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pagewidth {
+    max-width: 1026px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.pagewidthburger {
+    max-width: 1026px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*  ---Bandeau vert---  */
+
+#greenbanner {
+    background-color: #6da12f;
+    border-bottom: 2px solid #3b3228;
+}
+
+.designtext {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+#greenbanner .pagewidth .designtext .fas fa-phone-square-alt {
+    width: 30px;
+}
+
+#greenbanner .pagewidth .designtext p {
+    padding-left: 3%;
+    text-transform: uppercase;
+}
+
+#greenbanner .pagewidth .designtext p {
+    color: #3b3228;
+}
+
+.reseauxsociaux {
+    color: #3b3228;
+}
+
+.reseauxsociaux a {
+    color: #3b3228;
+}
+
+.reseauxsociaux a:hover {
+    color: #ffffff;
+}
+
+
+
+/*  ---Bannière image---  */
+
+.fdrelative {
+    position: relative;
+}
+
+.fdrelative .fdbanner100 img {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #3b3228;
+}
+
+.logobanner img {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3b3228;
+    width: 19.45%;
+
+}
+
+
+
+/*  ---Bannière image paniers---  */
+
+.fdrelativepanier {
+    position: relative;
+}
+
+.fdrelativepanier .fdbannerpanier100 img {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #3b3228;
+}
+
+.logobannerpanier img {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3b3228;
+    width: 20.15%;
+
+}
+
+
+
+/*  ---Bannière image actualités---  */
+
+.fdrelativeactus {
+    position: relative;
+}
+
+.fdrelativeactus .fdbanneractus100 img {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #3b3228;
+}
+
+.logobanneractus img {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3b3228;
+    width: 20.15%;
+
+}
+
+
+
+/*  ---Bannière image contact---  */
+
+.fdrelativecontact {
+    position: relative;
+}
+
+.fdrelativecontact .fdbannercontact100 img {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #3b3228;
+}
+
+.logobannercontact img {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3b3228;
+    width: 20.15%;
+
+}
+
+
+
+/*  ---Menu du haut---  */
+
+/*  -Gestion de l'ombre basse-*/
+.main-navigation {
+    background-color: #f0f0f0;
+    height: 100%;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+.site-title {
+    display: block;
+    margin-left: 10px;
+}
+
+.menuu {
+    display: none;
+    flex-basis: 100%;
+    list-style: none;
+    text-align: center;
+
+}
+
+/*sélectionne les éléments ayant pour classe .menuu précédés d’un élément ayant pour classe .menu-checkbox*/
+/*la pseudo classe :checked, sélectionne .menuu uniquement si .menu-checkbox est cochée*/
+.menu-checkbox:checked~.menuu {
+    display: block;
+}
+
+.menuu li a {
+    display: inline-block;
+    padding: 15px 20px 16px;
+
+    color: #3b3228;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.menuu li a:hover {
+    box-sizing: border-box;
+    border-top: 3px solid #6da12f;
+    border-bottom: 3px solid #6da12f;
+    padding: 12px 20px 13px;
+}
+
+/*checkbox caché-elle liée au burger*/
+.menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    top: -1000px;
+}
+
+/*sélectionne <label> avec la classe .menu-toggle s’il est adjacent (« + ») à la checkbox cochée et une outline sera ajouté*/
+/*ajoute un cadre quand la checkbox recevra le focus*/
+.menu-checkbox:focus+.menu-toggle {
+    outline: #6da12f auto 5px;
+}
+
+.nav-wrapper {
+    display: flex;
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    background-color: #e0dac7;
+    margin-bottom: 16px;
+    -moz-box-shadow: 0px 0px 12px 2px #000000;
+    -webkit-box-shadow: 0px 0px 12px 2px #000000;
+    -o-box-shadow: 0px 0px 12px 2px #000000;
+    box-shadow: 0px 0px 12px 2px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=16);
+}
+
+.menu-toggle {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #3b3228;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+    .site-title {
+        display: none;
+    }
+
+
+    .nav-wrapper {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .menu-toggle,
+    .menu-checkbox {
+        display: none;
+    }
+
+
+    .menuu {
+        display: block;
+        flex-basis: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuu li {
+        display: inline-block;
+    }
+
+
+}
+
+
+
+/*  ----------main-page d'accueil----------  */
+
+/*  ---Contenu 1 - Texte d'accueil---  */
+
+#contenu1accueil {
+    background-color: #f0f0f0;
+    padding: 30px 0 60px 0;
+}
+
+#contenu1accueil .pagewidth h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+#contenu1accueil .pagewidth p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#contenu1accueil .pagewidth .designcontenu1accueil {
+    display: flex;
+}
+
+#contenu1accueil .pagewidth .designcontenu1accueil img {
+    margin: 0 30px;
+    -webkit-box-shadow: 2px 2px 11px 3px rgba(0, 0, 0, 0.33);
+    box-shadow: 2px 2px 11px 3px rgba(0, 0, 0, 0.33);
+    width: 100%;
+}
+
+
+
+/*  ---Contenu 2 - Paniers---  */
+
+#contenu2paniers {
+    background-color: #e0dac7;
+    padding: 30px 0;
+    border-top: 2px solid #3b3228;
+    border-bottom: 2px solid #3b3228;
+    padding: 60px 0 60px 0;
+}
+
+.titrecontenu2paniers h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+    font-size: 1.7rem;
+}
+
+#contenu2paniers .pagewidthboard1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 h3 {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #6da12f;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    border: 1px solid #3b3228;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 .designprice {
+    background-color: #f0f0f0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-left: 1px solid #3b3228;
+    border-right: 1px solid #3b3228;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 img {
+    width: 100%;
+    height: auto;
+    -moz-box-shadow: 0px 0px 10px 1px #3b3228;
+    -webkit-box-shadow: 0px 0px 10px 1px #3b3228;
+    -o-box-shadow: 0px 0px 10px 1px #3b3228;
+    box-shadow: 0px 0px 10px 1px #3b3228;
+
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 ul {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px 10px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #3b3228;
+    border-right: 1px solid #3b3228;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 ul li {
+    margin-bottom: 5px;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 .reservez {
+    font-size: 1.5rem;
+    color: #3b3228;
+    background-color: #6da12f;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #3b3228;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 .reservez a {
+    color: #3b3228;
+}
+
+#contenu2paniers .pagewidth .pagewidthboard1 .reservez a:hover {
+    color: #ffffff;
+}
+
+
+
+/*  ---Contenu 3 - Coordonnées---  */
+
+#contenu3coordonnees{
+    background-color: #f0f0f0;
+    padding: 30px 0 30px 0;
+}
+
+#contenu3coordonnees .pagewidth{
+    display: flex;
+    justify-content: center;
+}
+
+#contenu3coordonnees .pagewidth h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+}
+
+#contenu3coordonnees .pagewidth p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees{
+    display: flex;
+    padding: 20px 0 40px 0;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees .textecontenu3coordonnees{
+    text-align: center;
+}
+
+#contenu3coordonnees span {
+    text-decoration: underline;
+}
+
+#contenu3coordonnees .pagewidth h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#contenu3coordonnees .pagewidth h4 a {
+    color: #3b3228;
+}
+
+#contenu3coordonnees .pagewidth h4 a:hover {
+    color: #6da12f;
+}
+
+#contenu3coordonnees .pagewidth .designcontenu3coordonnees img {
+    margin: 0 0 0 160px;
+}
+
+.slidegen {
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    /*cache les éléments du cadre -Images*/
+    height: 85%;
+    /*hauteur du cadre*/
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+    width: 100%;
+    /*CSS3 keyframes animation*/
+    animation-name: slide;
+    /*appel de l'animation du keyframes*/
+    animation-duration: 10s;
+    /* durée de l'animation*/
+    animation-iteration-count: infinite;
+    /*Indique le nombre de fois que l'animation est joué*/
+    animation-timing-function: ease-in-out;
+    /*transition lente entre deux images - au début et à la fin*/
+    animation-fill-mode: forwards;
+    /*Applique le style définit par la dernière étape - La dernière image joué reste affichée*/
+}
+
+#slides:hover {
+    animation-play-state: paused;
+    /* Mise en pause de l'animation quand la souris est sur l'image */
+}
+
+#slides figure {
+    display: inline-block;
+    /*Images - Positionnées les unes à la suite des autres*/
+    min-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0 2.5em;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+}
+
+.dots_commands {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.dots_commands li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.dots_commands label {
+    position: relative;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    text-indent: -9999px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.55) inset;
+    /*ombre*/
+    cursor: pointer;
+}
+
+.dots_commands label:active {
+    outline: none;
+    background: #6da12f;
+}
+
+#play {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2em;
+    right: 2em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid rgba(255, 255, 255, 0.7);
+    display: none;
+    text-indent: -9999px;
+    /*Cache le bouton en décalant le texte hors de la zone visible*/
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+/*--Bouton défilement--*/
+input[type="radio"]#show_slide1:checked~nav .dots_commands li:nth-of-type(1) label,
+input[type="radio"]#show_slide2:checked~nav .dots_commands li:nth-of-type(2) label,
+input[type="radio"]#show_slide3:checked~nav .dots_commands li:nth-of-type(3) label {
+    outline: none;
+    /*Cache le label une fois coché*/
+    background: #6da12f;
+    /*Couleur une fois selectionné*/
+}
+
+input[type="radio"]#show_slide1:checked~div#slides {
+    animation: none;
+    /*supprime l'animation*/
+    left: 0;
+    /*affiche l'image 1*/
+}
+
+input[type="radio"]#show_slide2:checked~div#slides {
+    animation: none;
+    /*supprime l'animation*/
+    left: -100%;
+    /*affiche l'image 2*/
+}
+
+input[type="radio"]#show_slide3:checked~div#slides {
+    animation: none;
+    /*supprime l'animation*/
+    left: -200%;
+    /*affiche l'image 3*/
+}
+
+
+/*--Bouton Play--*/
+input[type="radio"]:not(:nth-last-of-type(1)):checked~nav label#play {
+    display: block;
+    /*Le bouton s'affiche quand l'animation est arrêté*/
+}
+
+input[type="radio"]#play:checked~div#slides {
+    /*Au clic du bouton Play, l'animation redémarre*/
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+/*--@keyframes--*/
+@keyframes slide {
+
+    /* Modification des l'éléments pour l'animation */
+    0%,
+    20%,
+    100% {
+        left: 0;
+        /*1ère image - début de l'image à 0%*/
+    }
+
+    35%,
+    50% {
+        left: -100%;
+        /*2ème image - début de l'image à 35%*/
+    }
+
+    70%,
+    95% {
+        left: -200%;
+        /*3ème image - début de l'image à 70%*/
+    }
+
+}
+
+
+
+/*  ---Contenu 4 - Newsletter---  */
+
+#contenu4newsletter {
+    background-color: #6da12f;
+    -moz-box-shadow: inset 0px 0px 14px 1px #3b3228;
+    -webkit-box-shadow: inset 0px 0px 14px 1px #3b3228;
+    -o-box-shadow: inset 0px 0px 14px 1px #3b3228;
+    box-shadow: inset 0px 0px 14px 1px #3b3228;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#3b3228, Direction=NaN, Strength=14);
+}
+
+#contenu4newsletter .pagewidth {
+    display: flex;
+    justify-content: center;
+}
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter {
+    margin: 0 0 35px 0;
+}
+
+#contenu4newsletter .pagewidth h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 0 15px 0;
+}
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter input[type=email] {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    width: 70%;
+}
+
+#contenu4newsletter .pagewidth .designcontenu4newsletter input[type=submit] {
+    background-color: #3b3228;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    border: 0;
+}
+
+
+
+/*  ---Contenu 5 - Team---  */
+
+#contenu5team {
+    background-color: #f0f0f0;
+    padding: 70px 0 70px 0;
+}
+
+#contenu5team .pagewidth {
+    display: flex;
+    justify-content: center;
+}
+
+#contenu5team .pagewidth .designcontenu5team .membresteam {
+    text-align: center;
+}
+
+#contenu5team .pagewidth .designcontenu5team .membresteam img {
+    margin: 0 50px 10px;
+}
+
+#contenu5team .pagewidth .designcontenu5team .membresteam h2 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+#contenu5team .pagewidth .designcontenu5team .membresteam figure {
+    color: #6da12f;
+    font-size: 1.2rem;
+}
+
+
+
+/*  ---Retour haut de page---  */
+.retourhautdepage{
+    background-color: #f0f0f0;
+    text-align: right;
+}
+
+.retourhautdepage a{
+    padding: 20px;
+    margin: 10px;
+    background-color: #6da12f;
+    color: #f0f0f0;
+    border: 1px solid #3b3228;
+}
+
+
+
+/*  ----------main-page nos paniers----------  */
+
+/*  ---Paniers---  */
+
+#contenupaniers {
+    background-color: #f0f0f0;
+    padding: 30px 0 60px 0;
+}
+
+.titrecontenu2paniers {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+#contenupaniers .pagewidthboard1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board1 {
+    text-align: center;
+    width: 21.5%;
+    margin: 0 50px;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 h2 {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #6da12f;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    border: 1px solid #3b3228;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 .designprice {
+    background-color: #f0f0f0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-left: 1px solid #3b3228;
+    border-right: 1px solid #3b3228;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 img {
+
+    -moz-box-shadow: 0px 0px 10px 1px #3b3228;
+    -webkit-box-shadow: 0px 0px 10px 1px #3b3228;
+    -o-box-shadow: 0px 0px 10px 1px #3b3228;
+    box-shadow: 0px 0px 10px 1px #3b3228;
+
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 ul {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px 10px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #3b3228;
+    border-right: 1px solid #3b3228;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 ul li {
+    margin-bottom: 5px;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 .reservez {
+    font-size: 1.5rem;
+    color: #3b3228;
+    background-color: #6da12f;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #3b3228;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 .reservez a {
+    color: #3b3228;
+}
+
+#contenupaniers .pagewidth .pagewidthboard1 .reservez a:hover {
+    color: #ffffff;
+}
+
+
+
+/*  ---Paniers - Formulaire réservation---  */
+
+#contenupaniersformulaire {
+    background-color: #e0dac7;
+    padding: 60px 0 60px 0;
+    border-top: 2px solid #3b3228;
+}
+
+.titrepaniersformulaire {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.titrepaniersformulaire h3 {
+    font-size: 1.7rem;
+}
+
+.designformulaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.designpaniersform {
+    margin: 0 50px 10px;
+}
+
+.designpaniersform p {
+    margin: 8px 0;
+}
+
+.designpaniersform fieldset {
+    border: 0;
+}
+
+.designpaniersform fieldset:first-child {
+    display: flex;
+}
+
+.designpaniersform fieldset input[type=text],
+.designpaniersform fieldset input[type=tel],
+.designpaniersform fieldset input[type=email],
+.designpaniersform fieldset input[type=date] {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 110%;
+    font-size: 0.8rem;
+}
+
+.designpaniersform fieldset textarea {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 110%;
+    height: 150px;
+    font-size: 1rem;
+}
+
+.designpaniersform fieldset select {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 118%;
+    font-size: 0.8rem;
+}
+
+.formreservation {
+    width: 100%;
+    margin: 0 95px 0 50px;
+}
+
+.boutonform {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.boutonform input[type=submit] {
+    background-color: #3b3228;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    border: 0;
+}
+
+
+
+/*  ----------main-page actualités----------  */
+
+#contenuactus {
+    background-color: #f0f0f0;
+}
+
+#contenuactus .pagewidth .cardgen1 {
+    display: flex;
+}
+
+#contenuactus .pagewidth .cardgen2 {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#contenuactus .pagewidth .card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+#contenuactus .pagewidth .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#contenuactus .pagewidth .card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+#contenuactus .pagewidth .card .containerblog {
+    padding: 2px 16px;
+    font-family: 'Caveat', cursive;
+}
+
+#contenuactus .pagewidth .card .containerblog h4 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#contenuactus .pagewidth .card .containerblog h4 a {
+    color: #3b3228;
+}
+
+#contenuactus .pagewidth .card .containerblog h4 a:hover {
+    color: #6da12f;
+}
+
+.reseauxactus1 {
+    margin: 40px 0 10px;
+    vertical-align: bottom;
+    color: #6da12f;
+}
+
+.reseauxactus1 a {
+    color: #6da12f;
+}
+
+.reseauxactus1 a:hover {
+    color: #3b3228;
+}
+
+.reseauxactus2 {
+    margin: 5px 0 10px;
+    vertical-align: bottom;
+    color: #6da12f;
+}
+
+.reseauxactus2 a {
+    color: #6da12f;
+}
+
+.reseauxactus2 a:hover {
+    color: #3b3228;
+}
+
+
+
+/*  ----------main-page actualités FULL----------  */
+
+#contenuactusfull {
+    background-color: #f0f0f0;
+}
+
+.articlesactusfull {
+    display: flex;
+    padding: 30px 0 30px 0;
+}
+
+.reseauxactusgauche {
+    margin: 0 20px 0;
+}
+
+.reseauxactusgauche a {
+    color: #6da12f;
+}
+
+.reseauxactusgauche a:hover {
+    color: #3b3228;
+}
+
+.reseauxactusgauche i {
+    margin-bottom: 10px;
+}
+
+.reseauxactuscentre {
+    width: 100%;
+}
+
+.reseauxactuscentre h5 {
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+.datearticlesactus {
+    text-align: center;
+    color: #6da12f;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.textearticleactus {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.reseauxactusdroit {
+    width: 60%;
+    margin: 0 30px 0;
+}
+
+.reseauxactusdroit h6 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.articlesactusrecentok {
+    display: flex;
+    margin: 0 0 15px 0;
+    background-color: #e0dac7;
+    -webkit-box-shadow: 3px 4px 14px -9px #000000;
+    box-shadow: 3px 4px 14px -9px #000000;
+}
+
+.titrepimagesrecent {
+    font-size: 1.2rem;
+    font-family: 'Caveat', cursive;
+    margin: 5px 5px 5px 10px;
+}
+
+.titrepimagesrecent a {
+    color: #3b3228;
+}
+
+.titrepimagesrecent a:hover {
+    color: #6da12f;
+}
+
+.titrepimagesrecent span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    color: #6da12f;
+}
+
+
+
+/*  ----------main-page actualités Recette velouté de courgettes----------  */
+
+.tempscuissoncourgettesgen{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    background-color: #e0dac7;
+    margin: 40px 0;
+    padding: 20px 0;
+    border: 1px dashed #3b3228;
+}
+
+.tempscuissoncourgettes{
+    text-align: center;
+}
+
+.timecuissoncourgettes{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.ingredientscourgettesgen{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-bottom: 1px dashed #3b3228;
+    padding-bottom: 30px;
+}
+
+.ingredientscourgettes{
+    display: flex;
+    align-items: center;
+}
+
+.ingredientscourgettesquantités{
+    margin: 0 0 0 10px;
+}
+
+.recettecourgettesgen{
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+.recettecourgettes{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.recettecourgettesalign{
+    margin: 0 0 0 10px;
+}
+
+
+
+
+/*  ----------main-page contact----------  */
+
+#contenuadresse {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #3b3228;
+    padding: 30px 0 30px 0;
+}
+
+#contenuadresse .pagewidth {
+    display: flex;
+    justify-content: center;
+}
+
+/*  ---adresse---  */
+.designcontenuadresse {
+    font-style: normal;
+}
+
+#contenuadresse .pagewidth h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+#contenuadresse .pagewidth h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+#contenuadresse .pagewidth p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#contenuadresse .pagewidth .designcontenuadresse {
+    display: flex;
+    padding: 30px 0 40px 0;
+    text-align: center;
+}
+
+#contenuadresse .pagewidth .designcontenuadresse .textecontenuadresse {
+    text-align: center;
+}
+
+#contenuadresse span {
+    text-decoration: underline;
+}
+
+#contenuadresse .pagewidth h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#contenuadresse .pagewidth h3 a {
+    color: #3b3228;
+}
+
+#contenuadresse .pagewidth h3 a:hover {
+    color: #6da12f;
+}
+
+
+
+/*  ---formulaire contact---  */
+
+.designformcontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.designcontactform {
+    margin: 0 50px 10px;
+}
+
+.designcontactform p {
+    margin: 8px 0;
+}
+
+.designcontactform fieldset {
+    border: 0;
+}
+
+.designcontactform fieldset input[type=text],
+.designcontactform fieldset input[type=tel],
+.designcontactform fieldset input[type=email] {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.designcontactform fieldset textarea {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 100%;
+    height: 150px;
+    font-size: 1rem;
+}
+
+.formcontact {
+    width: 100%;
+    margin: 0 95px 0 50px;
+}
+
+.boutonformcontact input[type=submit] {
+    background-color: #3b3228;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    margin: 0px 0 30px 50px;
+    border: 0;
+}
+
+.googlemaps {
+    border: 2px solid #3b3228;
+}
+
+
+
+/*  ----------Désinscription Newsletter----------  */
+
+.designcontenunewsletter{
+    text-align: left;
+    font-style: normal;
+}
+
+#contenunewsletter {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #3b3228;
+    padding: 30px 10px 30px;   
+}
+
+#contenunewsletter .pagewidth {
+    display: flex;
+}
+
+
+#contenunewsletter .pagewidth h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+#contenunewsletter .pagewidth p {
+    font-size: 1.2rem;
+}
+
+.designformdesinscrip {
+    display: flex;
+    width: 70%;
+}
+
+.designdesinscripform {
+    margin: 0;
+}
+
+.designdesinscripform p {
+    margin: 8px 0;
+}
+
+.designdesinscripform fieldset {
+    border: 0;
+}
+
+.designdesinscripform fieldset input[type=text],
+.designdesinscripform fieldset input[type=email] {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 2px solid #3b3228;
+    color: #3b3228;
+    border: 2px solid #3b3228;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.formdesinscrip input[type="radio"] {
+    display: inline-flex;
+}
+
+.boutonformdesinscrip input[type=submit] {
+    background-color: #3b3228;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    border: 0;
+}
+
+
+
+/*  ----------Sitemap----------  */
+
+#contenusitemap {
+    font-size: 1.1rem;
+    background-color: #f0f0f0;
+    color: #3b3228;
+}
+
+#contenusitemap .pagewidth {
+    padding: 30px 0 30px;
+}
+
+#contenusitemap .pagewidth li {
+    padding-bottom: 8px;
+}
+
+#contenusitemap .pagewidth ul a {
+    color: #3b3228;
+}
+
+#contenusitemap .pagewidth ul a:hover {
+    color: #6da12f;
+}
+
+.sitemapulchild {
+    margin-left: 20px;
+}
+
+.boutonsitemapxml {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boutonsitemapxml a {
+    text-align: center;
+    background-color: #6da12f;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.boutonsitemapxml a:hover {
+    color: #3b3228;
+}
+
+
+
+/*  ----------main-mentions légales----------  */
+
+#mentionslegales {
+    background-color: #f0f0f0;
+    padding: 30px 0 60px 0;
+}
+
+#mentionslegales .pagewidth h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 25px 0 15px 0;
+}
+
+#mentionslegales .pagewidth h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#mentionslegales .pagewidth p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#mentionslegales .pagewidth ul li {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#mentionslegales .pagewidth b {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#mentionslegales .pagewidth strong {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#mentionslegales .pagewidth a {
+    color: #6da12f;
+}
+
+
+
+/*  ----------Footer----------  */
+
+#contenufooter {
+    background-color: #3b3228;
+    color: #6da12f;
+}
+
+#contenufooter .pagewidth {
+    display: flex;
+    justify-content: center;
+}
+
+#contenufooter .pagewidth .designfooter {
+    text-align: center;
+    margin: 30px 15px 10px;
+}
+
+.designfooter {
+    width: 100%;
+}
+
+.btdesinscripfooter{
+    margin-top: 10px;
+}
+
+#fixebasfooter{
+    margin-top: auto;
+}
+
+
+
+/*  --aside---  */
+.designcolonnefooter {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.designcolonnefooter .colonnefooter .navcolonnefooter:last-child {
+    display: flex;
+}
+
+.colonnefooter h3 {
+    margin-bottom: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+}
+
+.colonnefooter {
+    margin-bottom: 30px;
+}
+
+.colonnefooter a {
+    color: #ffffff;
+}
+
+.colonnefooter a:hover {
+    color: #6da12f;
+}
+
+.colonnefooter ul {
+    padding-right: 15px;
+}
+
+.navcolonnefooter {
+    color: #ffffff;
+}
+
+.navcolonnefooter ul li {
+    padding-bottom: 5px;
+}
+
+.colonnefooter input[type=email] {
+    padding: 8px;
+    text-transform: uppercase;
+    border: 1px solid #6da12f;
+    color: #6da12f;
+    width: 50%;
+}
+
+.colonnefooter input[type=submit] {
+    background-color: #6da12f;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    border: 0;
+}
+
+.reseauxsociauxfooter a {
+    margin-right: 10px;
+}
+
+.copyfooter {
+    text-align: left;
+}

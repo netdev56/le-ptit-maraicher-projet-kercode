@@ -1,0 +1,47 @@
+/* Icons réseaux sociaux barre verte */
+.reseauxsociaux{
+    display: none;
+}
+
+/* Adresse barre verte */
+.imptextebandeau{
+    font-size: 0.6rem;
+    width: 100%;
+}
+
+/* Banner index */
+.fdrelative{
+    display: none;
+}
+
+/* Menu */
+.main-navigation{
+    display: none;
+}
+
+/* Page Actualités */
+.fdrelativeactus{
+    display: none;
+}
+
+/* Page Actualités Full */
+.reseauxactusgauche{
+    display: none;
+}
+
+.reseauxactuscentre img{
+    width: 30%;
+}
+
+.titreactuscentre{
+    text-align: center;
+}
+
+.reseauxactusdroit{
+    display: none;
+}
+
+/* Footer */
+#contenufooter{
+    display: none;
+}

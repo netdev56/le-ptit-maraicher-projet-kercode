@@ -1,0 +1,5 @@
+User-agent:*
+Disallow:/le-ptit-maraicher-v2/nos-paniers-legumes-fruits.php
+Disallow:/le-ptit-maraicher-v2/contact-le-ptit-maraicher.php
+Disallow:/le-ptit-maraicher-v2/mentions-legales.php
+Sitemap:/le-ptit-maraicher-v2/sitemap.xml
